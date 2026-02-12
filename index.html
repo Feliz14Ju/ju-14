@@ -34,14 +34,11 @@ body{
     scroll-snap-align:start;
 }
 
-
 /* ---------- INICIO ---------- */
 
 .hero{
     background:url("foto4.png") center center / cover no-repeat;
-    min-height:110dvh;
 }
-
 
 .overlay{
     position:absolute;
@@ -76,6 +73,9 @@ body{
 .boton:hover{transform:scale(1.1);}
 
 /* ---------- FOTOS ---------- */
+#fotos{
+    padding-top:200px;
+}
 
 #fotos h1{
     margin-bottom:40px;
@@ -84,11 +84,15 @@ body{
 
 .foto-container{
     display:flex;
+    flex-wrap:wrap;
     gap:30px;
-    align-items:center;
-    justify-content:center;
+    width:90%;
+    max-width:1000px;
     margin-bottom:40px;
+    justify-content:center;
 }
+
+
 
 .foto{
     width:220px;
@@ -118,6 +122,9 @@ body{
 }
 
 /* ---------- CARTA ---------- */
+#carta{
+    padding-top:200px;
+}
 
 .carta-box{
     background:rgba(255,255,255,0.06);
@@ -218,8 +225,15 @@ body{
     </video>
 
     <img src="foto2.png" class="foto">
+
+    <video class="foto video" autoplay loop muted playsinline>
+        <source src="video/juvideo2.mp4" type="video/mp4">
+    </video>
+    <img src="foto5.png" class="foto">
     <img src="foto3.png" class="foto der">
+    
 </div>
+
 
 
     <button class="boton" onclick="irA(2)">Te amo 🤍</button>
@@ -287,6 +301,3 @@ setInterval(()=>{
 
 </body>
 </html>
-
-
-
