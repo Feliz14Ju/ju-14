@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0f0f0f;
+    color: white;
+    text-align: center;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to bottom, #1a1a1a, #000);
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+.gallery img,
+.chats img {
+    width: 80%;
+    max-width: 400px;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.letter p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+video {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 20px;
+}
+
+footer {
+    padding: 40px;
+    background: black;
+}
+
+.hearts::before {
+    content: "🤍 🤍 🤍 🤍 🤍";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: float 15s linear infinite;
+    opacity: 0.1;
+    font-size: 2rem;
+}
+
+@keyframes float {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(100vh);}
+}
