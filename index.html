@@ -11,11 +11,16 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 
 body{
-    overflow:hidden;
+    overflow-y:auto;
+    overflow-x:hidden;
     background:black;
     color:white;
     font-family:'Poppins', sans-serif;
+
+    scroll-snap-type:y mandatory;
+    height:100vh;
 }
+
 
 .seccion{
     height:100vh;
@@ -25,7 +30,10 @@ body{
     align-items:center;
     text-align:center;
     position:relative;
+
+    scroll-snap-align:start;
 }
+
 
 /* ---------- INICIO ---------- */
 
@@ -271,3 +279,4 @@ setInterval(()=>{
 
 </body>
 </html>
+
