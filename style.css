@@ -48,6 +48,10 @@ video {
     max-width: 600px;
     border-radius: 20px;
 }
+.video{
+    object-fit:cover;
+}
+
 
 footer {
     padding: 40px;
@@ -69,3 +73,4 @@ footer {
     0% {transform: translateY(0);}
     100% {transform: translateY(100vh);}
 }
+
